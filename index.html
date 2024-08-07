@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="account container">
+            <div class="account__container ">
+                <div class="pages">
+                    <a class="link__pages" href="#">
+                        Главная -
+                    </a>
+                    <a class="link__pages link__pages-last" href="#">
+                        Личный кабинет
+                    </a>
+                </div>
+
+                <h2 class="title account__title list-reset ">
+                    Личный кабинет
+                </h2>
+
+                <div class="account-top-container flex">
+
+
+                      <div class="account-top-left authorization">
+                        <h3 class="account-top-left__title account-top__title list-reset">
+                            Авторизация
+                        </h3>
+    
+                        <form id="login-form" class="modal-content animate">
+                              <label class="label" for="uname"><b>Логин</b></label>
+                              <input class="input" type="email" placeholder="Введите Ваш Email" name="uname" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        
+                              <label class="label" for="psw"><b>Пароль</b></label>
+                              <input class="input" type="password" placeholder="Введите пароль" name="psw" minlength="8" required>
+                                
+                              <button type="submit">Вход</button>
+                              <label>
+                                <input class="input" type="checkbox" checked="checked" name="remember"> Запомнить меня
+                              </label>
+                        
+                            <div class="container-bottom">
+                              <button type="button" class="cancelbtn">Регистрация</button>
+                              <span class="psw">Забыли <a href="javascript:;">пароль?</a></span>
+                            </div>
+                          </form>
+                    </div>
+
+                    <div class="account-top-left registration">
+                        <h3 class="account-top-left__title account-top__title list-reset">
+                            Регистрация
+                        </h3>
+    
+                        <form id="register-form" class="account__form">
+                            <label class="account__label" for="fname">ФИО</label><br><br>
+                            <input class="account__input" type="text" id="fname" name="firstname" placeholder="Как Вас зовут? :)" pattern="[А-Яа-яЁё\s]+" required><br><br>
+   
+                            <label class="account__label" for="mail">Email *</label><br><br>
+                            <input class="account__input input" type="email" id="mail" name="mail" placeholder="Введите Ваш Email" required><br><br>
+    
+                            <div class="password-container">
+                                <div class="form-group">
+                                    <label class="account__label" for="pwd">Пароль</label><br><br>
+                                    <input class="input account__input account__input-password account__input-password-1" type="password" id="new-pwd" name="new-pwd" placeholder="Пароль" minlength="8" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="account__label" for="pwd">Повторите пароль</label><br><br>
+                                    <input class="input account__input account__input-password account__input-password-2" type="password" id="repeat-pwd" name="repeat-pwd" placeholder="Подтвердите пароль"
+                                    minlength="8" required>
+                                </div>
+                                <span class="form-alert"></span>
+    
+                                
+                            </div>
+                            <button type="submit">Зарегистрироваться</button>
+
+                        </form>
+
+                        <a class="account__link" href="javascript:;">Вернуться на страницу авторизации</a>
+                    </div>
+
+                    <div class="account-top-left recovery">
+                        <h3 class="account-top-left__title account-top__title list-reset">
+                            Восстановление доступа
+                        </h3>
+    
+                        <form id="recovery-form" class="account__form">
+                            <label class="account__label" for="mail">Email *</label><br><br>
+                            <input class="input" class="account__input" type="email" id="mail" name="mail" placeholder="Введите Ваш Email" required><br><br>
+
+                            <button type="submit" class="recovery__btn btn">Восстановить доступ</button>
+    
+                            <div class="container-bottom">
+                                <button type="button"  class="cancelbtn">Регистрация</button>
+                                <a class="account__link" href="javascript:;">Вернуться на страницу авторизации</a>                              </div>
+                        </form>
+
+
+                    </div>
+            </div>
+        </section>
+        <div class="alert">
+            <span></span>
+           <a href="#" class="alert-close">X</a>
+        </div>
+    </main>
+    <script src="./test.js"></script>
+</body>
+</html>
+
+
